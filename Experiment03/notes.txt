@@ -1,0 +1,10 @@
+1.arrow function with 2 examples
+2.write a code for switch case
+2.how to truthy and falsy values in JS
+3.how to use ternery operator in JS
+4.loops in array----5 types
+6.diff between for in and for of
+7.understand filter and map function in JS with 2 examples
+8.use of this code
+9.rest and spread operator
+10.arrow fun and simple fun(this keyword in both)
