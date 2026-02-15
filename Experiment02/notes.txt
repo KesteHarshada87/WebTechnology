@@ -1,0 +1,15 @@
+1.array,function,object
+
+1.declare an function,array,object,string
+
+2.count vowels in string
+3.reverse a string
+4.find the largest in array
+5.find missing number in array
+6.palindrome in string
+7.fibonachi series
+8.remove duplecate number from array
+9.function to find even or odd
+10.sum of array
+11.number,math,date time
+
