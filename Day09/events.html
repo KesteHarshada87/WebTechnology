@@ -1,0 +1,132 @@
+<!-- //event -- it is an action that happens in browser.Eg.clicking a button,moving mouse,pressing key,submitting form,
+//loading page
+//js can detect this events and respond to them 
+//types of event--mouse event,keyboard event, browser event
+//mouse event--click,dbl click,mouse over,mouse out
+//keyboard event--key down,key up
+//browser event--load,scroll,resize
+
+//1.Using alert msg is not a good way--why--html should contain structure and js should contain logic so mixing both 
+//is bad practice hard to maintain in big project
+//2.scrpit tag is used insted--select element,assign function to click element when click function run--
+//but only 1 event is assign can not handle multiple listeners properly -->
+
+ <!-- <li>bad practice 
+            <img id="tiger"
+                src="https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+                onclick="alert('Tiger image clicked!')"
+                alt="Tiger">
+                
+        </li> -->
+
+
+ //add event listener is a js method used to attach an event handler to an html element so that specific fun run when a particular event is occur
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events Demo</title>
+
+    <style>
+        body {
+            background-color: #414141;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: lightblue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Amazing Images (Click to Remove)</h2>
+
+    <ul id="images">
+        <li>
+            <img id="photoshop"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"//img path
+                alt="Photoshop Logo">
+        </li>
+
+        <li>
+            <img id="japan"
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+                alt="Mount Fuji">
+        </li>
+
+        <li>
+            <img id="Nature"
+                src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b"
+                alt="Nature Image">
+        </li>
+
+        <li>
+            <img id="photoman"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                alt="Photographer">
+        </li>
+
+        <li>
+            <img id="tiger"
+                src="https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+                alt="Tiger">
+                
+        </li>
+
+        <li>
+            <a href="https://google.com" id="google">Visit Google</a>
+        </li>
+    </ul>
+    <script>
+    document.getElementById('images')
+    .addEventListener('click', function(e){
+    console.log("Type:", e.type);
+    console.log("Target:", e.target);
+    console.log("Current Target:", e.currentTarget);
+    console.log("ClientX:", e.clientX);
+    console.log("ClientY:", e.clientY);
+});
+</script>
+
+  </body>
+  <script>document.getElementById('tiger').onclick=function(){alert('Tiger image clicked!')}</script>
+    <script>document.getElementById('photoshop').addEventListener('click',function(e){console.log(e).false})</script>
+    <!-- event propagation -->
+    <script>document.getElementById('images').addEventListener('click',function(e){console.log('clicking inside the ul').true})</script>
+    <!-- event goes inner elemnt to parent and parent to document ^ child to parent for false -->
+    <!-- event goes inner elemnt to parent and parent to document ^ parent to child for true--event capturing -->
+
+     <script>document.getElementById('japan').addEventListener('click',function(e){console.log('clicking on japan').false})</script>
+     <script>document.getElementById('google').addEventListener('click',function(e){e.preventDefault();log('google clicked')})</script>
+
+    <!-- pointer event is come on console of browser -->
+  </html>
+
+  home activity--J query, type,time stamp,default prevented,target, source element,currunt target,client X,client Y
+  ,screen X, Screnn Y,alt key,shift key,control key

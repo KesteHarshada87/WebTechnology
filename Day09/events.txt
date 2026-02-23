@@ -1,0 +1,264 @@
+
+✅ 1. What is an Event?
+An event is any action that happens in the browser.
+
+Examples:
+
+Clicking a button
+
+Moving the mouse
+
+Pressing a key
+
+Submitting a form
+
+Page loading
+
+JavaScript can detect these events and run some code in response.
+
+✅ 2. Types of Events
+🖱 1. Mouse Events
+click
+
+dblclick
+
+mouseover
+
+mouseout
+
+⌨ 2. Keyboard Events
+keydown
+
+keyup
+
+🌐 3. Browser Events
+load
+
+scroll
+
+resize
+
+✅ 3. Bad Practice: Inline Event (onclick inside HTML)
+<img onclick="alert('Tiger image clicked!')">
+❌ Why bad?
+Mixes HTML (structure) + JS (logic)
+
+Hard to maintain in big projects
+
+Not scalable
+
+✔ Best practice: Use addEventListener() in JavaScript file.
+
+✅ 4. onclick vs addEventListener
+🔹 Your code:
+document.getElementById('tiger').onclick = function() {
+    alert('Tiger image clicked!')
+}
+Problem:
+Only one event can be assigned.
+
+If you assign again → previous one is removed.
+
+✔ Better way:
+document.getElementById('photoshop')
+.addEventListener('click', function(e){
+    console.log(e)
+})
+Why better?
+Can add multiple listeners
+
+Clean and professional
+
+More control (capture, bubble etc.)
+
+✅ 5. What is e (Event Object)?
+In:
+
+function(e)
+e is the event object.
+
+It contains all information about the event:
+
+Which element was clicked
+
+Mouse position
+
+Time
+
+Keys pressed
+
+And much more
+
+✅ 6. Event Propagation
+Event propagation means:
+
+👉 How event travels in DOM.
+
+There are 2 types:
+
+🔵 1. Event Bubbling (Default)
+Event goes:
+
+Child → Parent → Document
+Example:
+
+document.getElementById('images')
+.addEventListener('click', function(e){
+    console.log('clicking inside the ul')
+}, false)
+false = bubbling (default)
+
+So if you click on image:
+
+Image event runs
+
+Then UL event runs
+
+🔴 2. Event Capturing
+Event goes:
+
+Parent → Child
+If you write:
+
+addEventListener('click', function(){}, true)
+true = capturing
+
+✅ 7. preventDefault()
+In your code:
+
+document.getElementById('google')
+.addEventListener('click', function(e){
+    e.preventDefault();
+})
+Normally:
+
+Clicking link → opens Google
+
+After preventDefault():
+
+It stops default behavior
+
+Link will NOT open
+
+✅ 8. Mistakes in Your Code
+You wrote:
+
+console.log(e).false
+❌ Wrong
+
+Correct:
+
+console.log(e);
+And:
+
+log('google clicked')
+❌ Should be:
+
+console.log('google clicked')
+✅ 9. Important Event Object Properties (Home Activity)
+Now I’ll explain each one clearly 👇
+
+🔹 1. type
+Tells what type of event occurred.
+
+console.log(e.type)
+Example output:
+
+click
+🔹 2. timeStamp
+Time when event occurred (milliseconds).
+
+console.log(e.timeStamp)
+🔹 3. defaultPrevented
+Returns:
+
+true → if preventDefault() used
+
+false → if not used
+
+console.log(e.defaultPrevented)
+🔹 4. target
+The element that triggered the event.
+
+console.log(e.target)
+If you click tiger image → target is that image.
+
+🔹 5. currentTarget
+The element on which event listener is attached.
+
+Example:
+If click image inside UL:
+
+target → image
+
+currentTarget → UL
+
+🔹 6. srcElement
+Same as target (older version, mainly for IE).
+
+🔹 7. clientX & clientY
+Mouse position inside browser window.
+
+console.log(e.clientX, e.clientY)
+🔹 8. screenX & screenY
+Mouse position relative to entire screen.
+
+🔹 9. altKey
+Returns true if ALT key pressed during click.
+
+🔹 10. shiftKey
+Returns true if SHIFT pressed.
+
+🔹 11. ctrlKey
+Returns true if CTRL pressed.
+
+✅ 10. Pointer Event
+When you click image and log e, browser shows:
+
+PointerEvent
+Because modern browsers use PointerEvent (advanced mouse event).
+
+It supports:
+
+Mouse
+
+Touch
+
+Stylus
+
+✅ 11. Complete Clean Example (Corrected Version)
+document.getElementById('images')
+.addEventListener('click', function(e){
+    console.log("Type:", e.type);
+    console.log("Target:", e.target);
+    console.log("Current Target:", e.currentTarget);
+    console.log("ClientX:", e.clientX);
+    console.log("ClientY:", e.clientY);
+});
+🔥 Final Concepts Covered
+✔ Event
+✔ Types of events
+✔ Inline event (bad practice)
+✔ onclick
+✔ addEventListener
+✔ Event object
+✔ Bubbling
+✔ Capturing
+✔ preventDefault
+✔ target vs currentTarget
+✔ Mouse coordinates
+✔ Key detection
+
+If you want, I can also:
+
+Draw DOM event flow diagram
+
+Explain bubbling vs capturing with real visual example
+
+Or convert this into short viva answers for exam
+
+Just tell me 😊
+
+
+
+
