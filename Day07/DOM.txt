@@ -1,0 +1,5 @@
+DOM---document obj model
+     it is a bridge between js and html
+     it is a prohgramming interface of html when browser losd an html page it converts html
+      into obj that obj structure is called DOM
+     JS uses DOm to read,change,add,delete html elements
