@@ -1,0 +1,6 @@
+types of js:
+synchronous javascript: code execute line by line. Each task wait for previous tast to finish . locking nature. js by default single threaded and synchronous 
+
+Asynchronous javascript: some task take time like api call,file read,database ,timer. js does not wait. it moves to next line . non blocking behavior. used for fetching data server,reading file,set time out,Api calls
+
+Act: guess the output game,blocking vs non blocking with eg, real time eg (asyn and syn), Api fetching.
