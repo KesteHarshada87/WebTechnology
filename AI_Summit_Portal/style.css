@@ -1,76 +1,67 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: white;
-    text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
 }
 
 header {
-    padding: 20px;
-    background: rgba(0,0,0,0.5);
+  padding: 40px 20px;
 }
 
 button {
-    padding: 10px 20px;
-    margin: 15px;
-    border: none;
-    background: #ff9800;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: orange;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
-button:hover {
-    background: #e68900;
+.section {
+  padding: 40px 20px;
 }
 
+/* Speakers in ONE ROW */
 .card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: nowrap;   /* THIS MAKES ONE ROW */
+  overflow-x: auto;    /* Scroll if screen small */
 }
 
 .card {
-    background: rgba(255,255,255,0.1);
-    width: 250px;
-    padding: 15px;
-    border-radius: 10px;
-    transition: 0.3s;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  width: 220px;
+  border-radius: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
 .card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.2);
 }
 
 .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: white;
 }
 
+/* Speech Box */
 .speech-box {
-    max-width: 900px;
-    margin: auto;
-    background: rgba(255,255,255,0.15);
-    padding: 20px;
-    border-radius: 10px;
-    line-height: 1.6;
-    font-size: 16px;
-}
-
-/* App logo styling */
-.app-card img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.app-card {
-    cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  background: rgba(255,255,255,0.15);
+  padding: 15px;
+  border-radius: 10px;
 }

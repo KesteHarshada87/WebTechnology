@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Narendra Modi",
+    "img": "images/modi.jpg",
+    "quote": "India aims to lead the world in ethical, inclusive, and responsible AI development. The government is investing heavily through the India AI Mission to build computing infrastructure and support startups. AI should empower citizens and ensure 'AI for All', not just for a few corporations. India’s strong digital public infrastructure like Aadhaar and UPI provides a solid base for AI innovation. AI can transform healthcare, agriculture, education, and governance. Global cooperation and AI safety frameworks are essential for responsible AI growth. India’s youth and startup ecosystem will drive the nation toward becoming a global AI powerhouse."
+  },
+  {
+    "name": "Bill Gates",
+    "img": "images/gates.jpg",
+    "quote": "Bill Gates highlighted that Artificial Intelligence has immense potential to improve healthcare, education, agriculture, and climate solutions in India. He praised India’s strong digital public infrastructure as a powerful foundation for scaling AI innovations across sectors. He emphasized that AI must be deployed responsibly and ethically to ensure it benefits all sections of society, especially underserved communities. Gates also encouraged stronger public-private partnerships to accelerate AI-driven development and reaffirmed the Gates Foundation’s continued commitment to collaborating with India for inclusive and sustainable technological growth."
+  },
+  {
+    "name": "Demis Hassabis",
+    "img": "images/demis.jpg",
+    "quote": "Demis Hassabis emphasized that Artificial Intelligence has the potential to solve some of humanity’s biggest challenges, including breakthroughs in medicine, climate science, and advanced research. He highlighted the importance of long-term scientific innovation and responsible AI development to ensure technology benefits everyone. He praised India’s growing AI talent pool and research ecosystem, noting that collaboration between global AI labs and Indian institutions can accelerate progress. Hassabis also stressed that safety, ethics, and international cooperation must remain central as AI systems become more powerful and impactful."
+  },
+  {
+    "name": "Sundar Pichai",
+    "img": "images/sundar.jpg",
+    "quote": "Sundar Pichai highlighted that Artificial Intelligence is one of the most transformative technologies of our time, with an impact greater than electricity or the internet. He emphasized that India’s strong digital public infrastructure and vast developer community position the country as a global AI leader. Pichai noted that AI can revolutionize sectors like healthcare, education, agriculture, and climate sustainability. He also stressed the importance of building AI responsibly, ensuring safety, accessibility, and benefits for people across all sections of society."
+  },
+  {
+    "name": "Sam Altman",
+    "img": "images/sam.jpg",
+    "quote": "Sam Altman emphasized that Artificial Intelligence represents a powerful opportunity to boost global productivity, unlock new opportunities in education and healthcare, and accelerate scientific discovery. He highlighted India’s vibrant developer ecosystem and growing AI innovation community as crucial to shaping the future of AI. He underscored the importance of responsible and safe AI development that prioritizes benefits for all segments of society, while calling for collaboration between governments, researchers, and industry to ensure equitable access to AI’s capabilities. Altman also expressed confidence in India’s potential to contribute significantly to global AI leadership through innovation, talent, and ethical frameworks that guide the deployment of AI technologies for social good."
+  }
+]
