@@ -1,0 +1,34 @@
+promises-- It is an obj that represent future result of an asyn operation.
+           Means i promise to give result later. 
+           Ex.zomato
+           promises has 3 states--1. Pending/waiting
+                                  2. Resolved/fullfilled
+                                  3. Rejected/failed  
+
+.catch run when error
+.then run when error is not there
+
+activity: why promises better than callback?
+          create 4 promises ex --using bool variable
+                                 asyn keyword usage/in function promise 
+                                 and 2 other exIt 
+
+fetch-- It is a built in JS method used to make http request
+        Fetch method return promises                                  
+
+/ -- routes
+
+activity: aync await ex
+          fetch user display names in html list
+          understand code and its ex
+          fetch post show only first 5 records
+          create a fake promise manually resolve after 3 sec ,reject after 3 sec
+
+what is promise in JS?
+what is promise status?
+diff between promises and callback
+what is fetch method in JS?
+What does fetch return?
+why do we use response.json()?
+diff bet then and catch and asyn await
+what is promise chaining?          
