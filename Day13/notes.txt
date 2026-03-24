@@ -1,0 +1,18 @@
+express--used in backend tech
+It is web framework
+
+@ Express is a minimal and flexible web app framework of node js,that simplifies the development of web server and apis
+@ It provides features such as routing, middleware support, request and response handling, template rendering, rest api creation
+@ why express js if there is node js is available coz node js is used in simple app but express used in advance tech
+
+npm--node package manager
+npm init -y--it creates package.json--configuration file
+npm install express--it creates package-lock.json,node module folder
+
+activity01--diff between package.json and package-lock.json
+activity02--diff between dev dependency and dependency
+activity03--Create home pages and all advance
+activity04--get,put,post,patch,delete
+
+Routing in express--refers to determining how an app response to client request for specific url and http methods
+componenet of routing--url path, http methods, handler function
