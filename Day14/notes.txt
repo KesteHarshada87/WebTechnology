@@ -1,0 +1,21 @@
+Middleware--in express it is a function that execute during request before sending the final response 
+          --they have access to request,response and next
+
+activity01--why we used Middleware?
+            what are types of Middleware?
+            what is benefit of Middleware?
+            in company where Middleware used?
+
+activity02--detail study about query
+            query parameters with example and where we use in company             
+
+Handling req and res--express app Handle http req and res
+
+request--the request obj contains info about client request
+         Ex. url,header, query parameters ,request body   
+
+response obj--sends data back to the client
+
+response.send--send text
+response.status--check http status
+response.sendFiles--to send files
