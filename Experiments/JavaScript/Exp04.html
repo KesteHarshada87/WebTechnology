@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tiny HTTP Server</title>
+</head>
+<body>
+
+    <h2>Welcome to Tiny Node.js HTTP Server</h2>
+    <button onclick="showMessage()">Click Me</button>
+
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            console.log("Button clicked in browser");  // Chrome Console Output
+            document.getElementById("message").innerHTML =
+                "Hello! Server is working successfully.";
+        }
+    </script>
+
+</body>
+</html>
