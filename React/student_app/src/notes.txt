@@ -1,0 +1,5 @@
+state---data that can change,value that changes over time.
+    when state changes -> UI update automatically
+
+why state--?
+ --without state value can not update,with state can change automatically   

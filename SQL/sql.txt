@@ -1,0 +1,31 @@
+sql--structured query lang.It is used to communication between relational database .
+Mysql,postgre sql,Mysql server
+
+It is help for add,delete,update
+
+store procedure?
+view?
+joins?
+
+Activities--create table,insert data,select table,update data,delete data
+            connection node.js to sql
+
+create table db(
+    name varchar(20),
+    primary key int roll_no
+);
+
+insert into db('Harshada', 52);
+
+select * from db;
+
+What is ORM?--instaed of writing sql queries we use JS obj
+without orm--select * from
+with orm --find all
+
+web socket--it allows us real time communication 
+            http->req,response---continuous connection
+            ex.whatsapp,live stock price updates,notification
+            npm install ws--for installling
+
+Activities--deep study web socket,understand concept with ex            
