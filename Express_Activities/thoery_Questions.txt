@@ -1,0 +1,101 @@
+// ================= EXPRESS THEORY =================
+
+// 1. Difference between package.json and package-lock.json
+// package.json → Contains project metadata and dependency names
+// package-lock.json → Contains exact versions of dependencies for consistent installation
+
+
+// 2. Difference between dependencies and devDependencies
+// dependencies → Required for running application (production)
+// devDependencies → Required only during development (testing, tools)
+
+
+// 3. Routes Creation
+// Routes define how server responds to client requests using HTTP methods
+// Example → app.get(), app.post()
+
+
+// 4. HTTP Methods
+// GET → Retrieve data
+// POST → Create new data
+// PUT → Update existing data
+// DELETE → Remove data
+
+
+
+// ================= MIDDLEWARE =================
+
+// 1. Why we use middleware?
+// Middleware is used to process requests before sending response
+// Example → authentication, logging, validation
+
+
+// 2. Types of middleware
+// Application-level middleware
+// Router-level middleware
+// Built-in middleware (express.json())
+// Third-party middleware (cors, morgan)
+// Error-handling middleware
+
+
+// 3. Benefits of middleware
+// Code reusability
+// Centralized logic
+// Improved security
+// Cleaner and maintainable code
+
+
+// 4. Company-level use of middleware
+// Authentication using JWT
+// Logging user requests
+// Input validation
+// Global error handling
+
+
+
+// ================= QUERY PARAMETERS =================
+
+// 1. What are query parameters?
+// Query parameters are values passed in URL after '?'
+
+
+// 2. Detailed study
+// Format → /users?name=tej&age=20
+// Access → req.query.name, req.query.age
+
+
+// 3. Examples
+// /search?q=shoes
+// /users?page=2
+// /products?category=mobile
+// /filter?price=1000
+
+
+// 4. Real-time use
+// Search functionality
+// Pagination (page numbers)
+// Filtering data
+// Sorting results
+
+
+
+// ================= TEMPLATE ENGINE =================
+
+// 1. Implement EJS
+// EJS is used to generate dynamic HTML pages in Express
+
+
+// 2. What are static files?
+// Static files include CSS, JavaScript, images served directly to client
+
+
+// 3. What is Express Router?
+// Express Router is used to separate routes into different files/modules
+
+
+// 4. Complete Express workflow
+// Step 1 → Client sends request
+// Step 2 → Request goes to middleware
+// Step 3 → Route handles request
+// Step 4 → Business logic executes
+// Step 5 → Response is sent to client
