@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+a {
+  margin: 10px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}

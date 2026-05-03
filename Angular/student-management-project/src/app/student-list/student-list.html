@@ -1,0 +1,27 @@
+<h2>Student List</h2>
+
+<input [(ngModel)]="searchText" placeholder="Search student" class="input">
+
+<p>Total Students: {{ students.length }}</p>
+
+<div class="card" *ngFor="let s of students; let i = index">
+  
+  <div *ngIf="!searchText || s.name.toLowerCase().includes(searchText.toLowerCase())">
+
+    <div *ngIf="editIndex !== i">
+      <h3>{{ s.name }}</h3>
+      <p>{{ s.course }}</p>
+
+      <button class="edit" (click)="startEdit(i)">Edit</button>
+      <button class="delete" (click)="deleteStudent(i)">Delete</button>
+    </div>
+
+    <div *ngIf="editIndex === i">
+      <input [(ngModel)]="editStudent.name" class="input">
+      <input [(ngModel)]="editStudent.course" class="input">
+      <button class="save" (click)="updateStudent()">Save</button>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,15 @@
+<h2>Directives Demo</h2>
+
+<button (click)="toggle()">Toggle</button>
+
+<!-- ngIf -->
+<div *ngIf="show">
+  <p>This content is visible</p>
+</div>
+
+<hr>
+
+<!-- ngFor -->
+<ul>
+  <li *ngFor="let s of students">{{ s }}</li>
+</ul>
